@@ -1,0 +1,6 @@
+interface:
+  display_name: "bbilr First Skills"
+  short_description: "Thai-first evidence-led work without ceremony"
+  default_prompt: "Use $bbilr-first-skills to handle this task with evidence, concise Thai, and only the workflow it needs."
+policy:
+  allow_implicit_invocation: true

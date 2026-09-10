@@ -1,8 +1,10 @@
-# Evidence First Skills
+# bbilr First Skills
 
 [ภาษาไทย](README.th.md)
 
-Seven reusable agent skills for evidence-backed work, fewer repeated questions, and clear verification boundaries. Built from practical coding, setup, local AI, business reconciliation, and Thai communication workflows.
+One coordinating skill and seven focused companions for bbilr's working style: concise Thai with technical English, evidence before claims, minimal implementation, and no repeated approval inside an agreed scope. Covers Windows coding and game development, repository setup, local AI image/video workflows, business reconciliation, and Obsidian research notes.
+
+Formerly `bbilr/evidence-first-skills`. The repository is renamed, not duplicated. Existing companion skill names remain compatible; the new entry point is `$bbilr-first-skills`.
 
 These are instructions, not background services. They do not add tools, bypass permissions, guarantee correctness, or automatically persist state across sessions.
 
@@ -10,6 +12,7 @@ These are instructions, not background services. They do not add tools, bypass p
 
 | Skill | Purpose | Example request |
 | --- | --- | --- |
+| [bbilr-first-skills](skills/bbilr-first-skills/SKILL.md) | Select one workflow, preserve settled decisions, and apply the relevant domain guidance. | `Use $bbilr-first-skills to handle this task with evidence and concise Thai.` |
 | [evidence-first-work](skills/evidence-first-work/SKILL.md) | Tie claims to evidence, honor settled decisions, verify and stop at the requested scope. | `Use $evidence-first-work to fix this bug and report the checks actually run.` |
 | [repo-intake](skills/repo-intake/SKILL.md) | Understand an unfamiliar repository without unnecessary cloning or installation. | `Use $repo-intake to explain this repository and its supported setup.` |
 | [install-checker](skills/install-checker/SKILL.md) | Separate global/project scope, installed files, discovery, and working execution. | `Use $install-checker to install this tool globally and verify what works.` |
@@ -23,9 +26,9 @@ These are instructions, not background services. They do not add tools, bypass p
 Prerequisites: Git and PowerShell. Run the following from a directory where you want the repository checkout. It uses `CODEX_HOME` when set, otherwise your user profile's `.codex` directory.
 
 ```powershell
-git clone https://github.com/bbilr/evidence-first-skills.git
+git clone https://github.com/bbilr/bbilr-first-skills.git
 if ($LASTEXITCODE -ne 0) { throw 'Clone failed' }
-Set-Location evidence-first-skills
+Set-Location bbilr-first-skills
 
 $skillHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $env:USERPROFILE '.codex' }
 $destination = Join-Path $skillHome 'skills'
@@ -53,7 +56,9 @@ The command installs per-user skill files, not machine-wide services or project 
 2. In a new Codex session, check whether the skill appears in the available skill list. If absent, verify the active Codex home and host-specific reload behavior. A new session alone is not proof of discovery.
 3. Invoke a skill explicitly with an example above and inspect whether its guidance was actually applied. Files present, discovery, and successful use are separate checks.
 
-Automatic selection is permitted by the supplied metadata but is not guaranteed on every request. For a default preference, review and merge the relevant rules from [AGENTS.example.md](AGENTS.example.md) into your existing Codex-home `AGENTS.md`. Do not overwrite unrelated instructions. Choose one main workflow and add only relevant domain/style guidance.
+Automatic selection is permitted by the supplied metadata but is not guaranteed on every request. To use this as your main workflow, review and merge [AGENTS.example.md](AGENTS.example.md) into your existing Codex-home `AGENTS.md`. Do not overwrite unrelated instructions. The main skill selects companions; it does not load all of them on every turn. Use Pordee for normal brief Thai and Thai Clear Brief for language-editing tasks.
+
+See [Compatibility And Migration](COMPATIBILITY.md) for conflicting workflow categories, the reference migration, and how to avoid reintroducing duplicate routers. Installation copies skills only: it does not disable other plugins, rewrite global instructions, or migrate an existing setup without your explicit action.
 
 Keep project-specific paths, credentials, prices, fee rates, model settings, and identity thresholds in private project configuration. The public skills intentionally contain no personal project data.
 
@@ -61,10 +66,12 @@ Keep project-specific paths, credentials, prices, fee rates, model settings, and
 
 Use `git pull --ff-only` in the checkout, review the diff, and back up existing installed folders before copying a selected update. Do not blindly replace customized skills. To uninstall, remove only the corresponding installed skill folders and any preferences you added; confirm their exact paths first. Removing a checkout alone does not uninstall copied skills.
 
+For an existing checkout of the old repository, update its remote with `git remote set-url origin https://github.com/bbilr/bbilr-first-skills.git`, then pull. Existing installed companion folders do not need a name change. Install the new `bbilr-first-skills` folder and merge the new defaults to adopt the coordinating workflow; review changes before replacing any customized companion.
+
 ## Validation And Limitations
 
-The initial release was checked with Codex's bundled `quick_validate.py` for all seven skills, YAML parsing, local Markdown link checks, and a public-file privacy scan. A disposable install-copy smoke test checked file layout and refusal to overwrite existing skills. These checks establish package structure, not improved behavior in every future task. Real GPU runs and business reconciliations are not included as evidence for this package.
+The renamed package is checked with Codex's bundled `quick_validate.py` for all eight skills, YAML parsing, local Markdown link checks, and a public-file privacy scan. A disposable install-copy smoke test checks file layout and refusal to overwrite existing skills. These checks establish package structure, not improved behavior in every future task. Real GPU runs and business reconciliations are not included as evidence for this package. Activation in an already-running session is a separate verification step.
 
 ## License And Scope
 
-[MIT License](LICENSE). You may use, modify, and redistribute this package under its license. This release contains the seven skills listed above and an optional defaults example. It does not redistribute Ponytail, Superpowers, Compass Skills, Obsidian integrations, other installed plugins, private memories, or host configuration.
+[MIT License](LICENSE). You may use, modify, and redistribute this package under its license. This release contains the eight skills listed above, work-pattern guidance, and optional defaults. It does not redistribute Ponytail, Superpowers, Compass Skills, Obsidian integrations, other installed plugins, private memories, or host configuration. Shared principles are expressed in this package's own instructions; third-party packages retain their own ownership and licenses.
