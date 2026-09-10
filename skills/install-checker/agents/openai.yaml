@@ -1,0 +1,6 @@
+interface:
+  display_name: "Install Checker"
+  short_description: "Verify installs before commands"
+  default_prompt: "Use $install-checker to verify the official install path before giving setup commands."
+policy:
+  allow_implicit_invocation: true

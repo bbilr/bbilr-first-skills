@@ -1,0 +1,6 @@
+interface:
+  display_name: "Business Reconciliation"
+  short_description: "Reconcile business sources without duplicates"
+  default_prompt: "Use $business-reconciliation to reconcile these records and separate verified totals from items needing review."
+policy:
+  allow_implicit_invocation: true

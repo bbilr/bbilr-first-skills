@@ -1,0 +1,6 @@
+interface:
+  display_name: "Pordee"
+  short_description: "Concise Thai without losing evidence"
+  default_prompt: "Use $pordee to answer in concise Thai while preserving evidence and uncertainty."
+policy:
+  allow_implicit_invocation: true
