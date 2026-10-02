@@ -22,6 +22,14 @@ Use this skill to make install instructions accurate and low-risk.
 6. Honor existing authorization for the requested installation and scope. Ask before additional spending, destructive replacement, publication, credential access, or configuration changes outside that scope. Never print credentials.
 7. Verify after install with the smallest check: version command, package listing, config file readback, smoke test, or documented health check.
 
+## Version And Environment Compatibility
+
+- Match instructions to the installed CLI/API version and the skill or plugin's expected version. Check local version/help output and corresponding official docs before copying commands from newer upstream examples.
+- Report the version or revision actually checked when it affects compatibility; date changing external evidence. Do not describe the latest upstream release as the installed version.
+- Reuse a compatible project environment and pinned dependencies first. When isolation is needed, choose a supported project environment or isolated tool installation rather than changing shared Python/Node dependencies by habit.
+- A skill describes a workflow; installing its text does not install its underlying runtime. Install additional tools only when requested or necessary within the authorized task.
+- Do not patch managed plugin cache files to resolve version drift. Use the supported plugin update path or a narrow user-owned supplement, and distinguish a documented workaround from a tested one.
+
 ## Output
 
 Give practical install steps only after verification:

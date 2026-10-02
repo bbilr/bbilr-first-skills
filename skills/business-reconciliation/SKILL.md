@@ -14,6 +14,14 @@ Keep sales, settlement, cash, and control totals distinct so the same money is n
 - Inspect identifiers, coverage, and duplicate exports before combining files. Deduplicate supported matches; preserve uncertain matches for review.
 - Do not classify unreviewed bank rows as business receipts or expenses. Separate transfers, timing differences, refunds, canceled orders, and personal or unidentified transactions.
 
+## Extraction And OCR
+
+- Prefer native CSV/XLSX or structured exports over OCR when available. Use an existing extraction tool such as Docling only when it fits the source; verify the installed version's support instead of requiring a new dependency.
+- Preserve the original and trace extracted values to file, page/table/row/cell where available. Record extraction tool/version and material settings when used; use hashes when duplicate-file detection matters.
+- Keep OCR/extracted rows as `draft` or `needs review` until checked against the source. Do not mix unreviewed extraction into confirmed financial totals.
+- Check representative source rows and decision-critical values: dates, currencies, identifiers, decimal separators, signs, discounts, fees, and totals. Expose missing pages, omitted rows, and unreadable fields rather than reconstructing them as facts.
+- Do not assume reliable Thai recognition or invent a confidence threshold. Separate extraction correctness from reconciliation correctness; a balanced total alone does not prove that the rows were read correctly.
+
 ## Reconciliation
 
 1. Establish source totals and link rows using available order, settlement, payout, or transaction identifiers. Date and amount alone may be ambiguous.

@@ -2,7 +2,7 @@
 
 ## One Workflow Owner / ใช้ workflow หลักชุดเดียว
 
-`bbilr-first-skills` coordinates its seven companions. Domain tools and skills remain useful; multiple mandatory process owners are the source of conflict. An installed file is not proof that its rules are active, and changing config does not rewrite an already-loaded conversation.
+`bbilr-first-skills` coordinates its eight companions. Domain tools and skills remain useful; multiple mandatory process owners are the source of conflict. An installed file is not proof that its rules are active, and changing config does not rewrite an already-loaded conversation.
 
 ตัวหลักเลือกสกิลเฉพาะงานที่จำเป็น เครื่องมือด้านเกม การเงิน วิจัย และ Obsidian ยังใช้ร่วมกันได้ การติดตั้งไฟล์ไม่ใช่หลักฐานว่า session โหลดกฎแล้ว และการเปลี่ยน config ไม่ได้ล้างคำสั่งที่โหลดไปก่อนหน้า
 

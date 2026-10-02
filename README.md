@@ -2,7 +2,7 @@
 
 [ภาษาไทย](README.th.md)
 
-One coordinating skill and seven focused companions for bbilr's working style: concise Thai with technical English, evidence before claims, minimal implementation, and no repeated approval inside an agreed scope. Covers Windows coding and game development, repository setup, local AI image/video workflows, business reconciliation, and Obsidian research notes.
+One coordinating skill and eight focused companions for bbilr's working style: concise Thai with technical English, evidence before claims, minimal implementation, and no repeated approval inside an agreed scope. Covers Windows coding and game development, repository setup, source research, local AI image/audio/video workflows, business reconciliation, and Obsidian research notes.
 
 Formerly `bbilr/evidence-first-skills`. The repository is renamed, not duplicated. Existing companion skill names remain compatible; the new entry point is `$bbilr-first-skills`.
 
@@ -14,10 +14,11 @@ These are instructions, not background services. They do not add tools, bypass p
 | --- | --- | --- |
 | [bbilr-first-skills](skills/bbilr-first-skills/SKILL.md) | Select one workflow, preserve settled decisions, and apply the relevant domain guidance. | `Use $bbilr-first-skills to handle this task with evidence and concise Thai.` |
 | [evidence-first-work](skills/evidence-first-work/SKILL.md) | Tie claims to evidence, honor settled decisions, verify and stop at the requested scope. | `Use $evidence-first-work to fix this bug and report the checks actually run.` |
-| [repo-intake](skills/repo-intake/SKILL.md) | Understand an unfamiliar repository without unnecessary cloning or installation. | `Use $repo-intake to explain this repository and its supported setup.` |
-| [install-checker](skills/install-checker/SKILL.md) | Separate global/project scope, installed files, discovery, and working execution. | `Use $install-checker to install this tool globally and verify what works.` |
-| [local-ai-verification](skills/local-ai-verification/SKILL.md) | Check local model/workflow dependencies, execution, and actual output quality. | `Use $local-ai-verification to check this ComfyUI workflow against the project criteria.` |
-| [business-reconciliation](skills/business-reconciliation/SKILL.md) | Reconcile orders, settlements, bank movements, and control totals without double counting. | `Use $business-reconciliation to reconcile these exports and list unmatched rows.` |
+| [repo-intake](skills/repo-intake/SKILL.md) | Understand a repository, adoption fit, and component licenses without unnecessary installation. | `Use $repo-intake to explain this repository and its supported setup.` |
+| [source-research](skills/source-research/SKILL.md) | Collect multi-source evidence with dates, locators, scope, and unresolved gaps. | `Use $source-research to compare competitors with traceable sources and separate facts from inference.` |
+| [install-checker](skills/install-checker/SKILL.md) | Separate global/project scope and verify installed-version compatibility, discovery, and execution. | `Use $install-checker to install this tool globally and verify what works.` |
+| [local-ai-verification](skills/local-ai-verification/SKILL.md) | Check model/workflow dependencies and actual image, audio, video, or Thai TTS output. | `Use $local-ai-verification to check this Thai TTS sample and distinguish decode checks from listening.` |
+| [business-reconciliation](skills/business-reconciliation/SKILL.md) | Reconcile business records without double counting; review OCR drafts before confirming totals. | `Use $business-reconciliation to reconcile these exports and list unmatched rows.` |
 | [thai-clear-brief](skills/thai-clear-brief/SKILL.md) | Write natural, concise Thai while retaining uncertainty and technical detail. | `Use $thai-clear-brief to rewrite this explanation in clear Thai.` |
 | [pordee](skills/pordee/SKILL.md) | Use a concise Thai style with lite/full/stop controls and honest statistics. | `Use $pordee in lite mode to summarize the result.` |
 
@@ -70,8 +71,14 @@ For an existing checkout of the old repository, update its remote with `git remo
 
 ## Validation And Limitations
 
-The renamed package is checked with Codex's bundled `quick_validate.py` for all eight skills, YAML parsing, local Markdown link checks, and a public-file privacy scan. A disposable install-copy smoke test checks file layout and refusal to overwrite existing skills. These checks establish package structure, not improved behavior in every future task. Real GPU runs and business reconciliations are not included as evidence for this package. Activation in an already-running session is a separate verification step.
+The current package is checked with Codex's bundled `quick_validate.py` for all nine skills, YAML parsing, local Markdown link checks, and a public-file privacy scan. A disposable install-copy smoke test checks file layout and refusal to overwrite existing skills. These checks establish package structure, not improved behavior in every future task. Research extraction, OCR, GPU runs, TTS listening, video rendering, and business reconciliations are not runtime acceptance evidence for this package. Host discovery and actual invocation are separate checks.
+
+## Research And Media Guidance
+
+Use `$source-research` for multi-source comparisons, competitor or customer-pain research, and source audits. A single fact lookup does not need an extra research workflow. Crawl4AI and Docling are optional tool references, not bundled dependencies or automatic installations. Repository popularity and generated business ideas are leads, not proof of paid demand or profit.
+
+For video requests, [video-work.md](skills/bbilr-first-skills/references/video-work.md) supplements an available specialist such as Hyperframes. It reuses the approved project brief and checks rendered Thai text, framing, timing, and audio rather than adding another mandatory interview. Keep voices and quality thresholds in project-owned sources.
 
 ## License And Scope
 
-[MIT License](LICENSE). You may use, modify, and redistribute this package under its license. This release contains the eight skills listed above, work-pattern guidance, and optional defaults. It does not redistribute Ponytail, Superpowers, Compass Skills, Obsidian integrations, other installed plugins, private memories, or host configuration. Shared principles are expressed in this package's own instructions; third-party packages retain their own ownership and licenses.
+[MIT License](LICENSE). You may use, modify, and redistribute this package under its license. This release contains the nine skills listed above, work-pattern/video guidance, and optional defaults. It does not redistribute Ponytail, Superpowers, Compass Skills, Obsidian integrations, other installed plugins, private memories, or host configuration. Shared principles are expressed in this package's own instructions; third-party packages retain their own ownership and licenses.

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Source Research"
+  short_description: "Collect traceable evidence across sources"
+  default_prompt: "Use $source-research to collect and verify evidence for this research question, with source dates and unresolved gaps."
+policy:
+  allow_implicit_invocation: true

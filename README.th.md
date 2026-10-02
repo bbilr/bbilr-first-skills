@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-สกิลหลัก 1 ตัวกับสกิลเฉพาะงาน 7 ตัว จัดตามวิธีทำงานของ bbilr: ภาษาไทยกระชับ เก็บ technical English ตรวจหลักฐานก่อนสรุป ทำเท่าที่จำเป็น และไม่ถามอนุมัติซ้ำในขอบเขตเดิม ครอบคลุมโค้ดและเกมบน Windows การติดตั้ง repo งาน local AI ภาพ/วิดีโอ กระทบยอดธุรกิจ และบันทึกวิจัยใน Obsidian
+สกิลหลัก 1 ตัวกับสกิลเฉพาะงาน 8 ตัว จัดตามวิธีทำงานของ bbilr: ภาษาไทยกระชับ เก็บ technical English ตรวจหลักฐานก่อนสรุป ทำเท่าที่จำเป็น และไม่ถามอนุมัติซ้ำในขอบเขตเดิม ครอบคลุมโค้ดและเกมบน Windows การติดตั้ง repo วิจัยหลายแหล่ง งาน local AI ภาพ/เสียง/วิดีโอ กระทบยอดธุรกิจ และบันทึกวิจัยใน Obsidian
 
 เปลี่ยนชื่อจาก `bbilr/evidence-first-skills` โดยใช้ repository เดิม สกิลย่อยยังใช้ชื่อเดิมได้ เพิ่ม `$bbilr-first-skills` เป็นจุดเริ่มต้นสำหรับเลือก workflow
 
@@ -14,10 +14,11 @@
 | --- | --- | --- |
 | [bbilr-first-skills](skills/bbilr-first-skills/SKILL.md) | เลือก workflow เดียว รักษาข้อสรุปเดิม และใช้สกิลเฉพาะที่งานต้องการ | `ใช้ $bbilr-first-skills ทำงานนี้จากหลักฐานและตอบไทยกระชับ` |
 | [evidence-first-work](skills/evidence-first-work/SKILL.md) | ตรวจหลักฐาน เคารพข้อสรุปเดิม และทำงานจนผ่านเกณฑ์ที่ขอ | `ใช้ $evidence-first-work แก้บั๊กนี้ พร้อมบอกผลตรวจที่รันจริง` |
-| [repo-intake](skills/repo-intake/SKILL.md) | อ่าน repo ใหม่เท่าที่จำเป็น ก่อนอธิบายหรือแก้โค้ด | `ใช้ $repo-intake ดูว่า repo นี้ทำอะไรและติดตั้งแบบไหนได้` |
-| [install-checker](skills/install-checker/SKILL.md) | แยก global/project และตรวจว่าติดตั้งแล้ว ระบบพบแล้ว หรือใช้ได้จริง | `ใช้ $install-checker ติดตั้งเครื่องมือนี้แบบ global และตรวจผล` |
-| [local-ai-verification](skills/local-ai-verification/SKILL.md) | ตรวจ model, dependency, workflow และ output จริง | `ใช้ $local-ai-verification ตรวจ ComfyUI workflow นี้ตามเกณฑ์โครงการ` |
-| [business-reconciliation](skills/business-reconciliation/SKILL.md) | กระทบยอด order, settlement และ bank โดยไม่บวกยอดซ้ำ | `ใช้ $business-reconciliation กระทบยอดไฟล์เหล่านี้ แยกรายการที่ยังจับคู่ไม่ได้` |
+| [repo-intake](skills/repo-intake/SKILL.md) | อ่าน repo ประเมินความเหมาะสมและ license ของส่วนประกอบ โดยไม่ติดตั้งเกินจำเป็น | `ใช้ $repo-intake ดูว่า repo นี้ทำอะไรและติดตั้งแบบไหนได้` |
+| [source-research](skills/source-research/SKILL.md) | เก็บหลักฐานหลายแหล่ง พร้อมวันที่ ตำแหน่งอ้างอิง ขอบเขต และสิ่งที่ยังไม่ทราบ | `ใช้ $source-research เปรียบเทียบคู่แข่งพร้อมแหล่งที่ตรวจย้อนกลับได้ และแยกข้อเท็จจริงจากการอนุมาน` |
+| [install-checker](skills/install-checker/SKILL.md) | แยก global/project ตรวจ compatibility ของเวอร์ชันที่ติดตั้ง ระบบพบสกิล และการใช้งานจริง | `ใช้ $install-checker ติดตั้งเครื่องมือนี้แบบ global และตรวจผล` |
+| [local-ai-verification](skills/local-ai-verification/SKILL.md) | ตรวจ model, workflow และ output ภาพ/เสียง/วิดีโอ รวมเสียงไทย TTS | `ใช้ $local-ai-verification ตรวจตัวอย่างเสียงไทยนี้ แยกผล decode จากการฟังจริง` |
+| [business-reconciliation](skills/business-reconciliation/SKILL.md) | กระทบยอดไม่บวกซ้ำ และทบทวน OCR Draft ก่อนยืนยันยอด | `ใช้ $business-reconciliation กระทบยอดไฟล์เหล่านี้ แยกรายการที่ยังจับคู่ไม่ได้` |
 | [thai-clear-brief](skills/thai-clear-brief/SKILL.md) | เขียนไทยให้ชัด กระชับ เก็บศัพท์เทคนิคและความไม่แน่ใจที่จำเป็น | `ใช้ $thai-clear-brief เรียบเรียงข้อความนี้ให้อ่านง่าย` |
 | [pordee](skills/pordee/SKILL.md) | โหมดภาษาไทยกระชับ เลือก lite/full หรือหยุดได้ | `ใช้ $pordee แบบ lite สรุปผลนี้` |
 
@@ -72,12 +73,18 @@ path โครงการ ราคา ค่าธรรมเนียม cre
 
 ## ตรวจสอบแล้วแค่ไหน
 
-ชุดที่เปลี่ยนชื่อมีสกิล 8 ตัว ตรวจด้วย `quick_validate.py` ที่มากับ Codex รวมถึง parse YAML ตรวจลิงก์ Markdown ภายใน และสแกนข้อมูลส่วนตัวก่อนเผยแพร่ ทดลองขั้นตอนคัดลอกในโฟลเดอร์ชั่วคราวและตรวจว่าหยุดเมื่อชื่อสกิลซ้ำ
+ชุดปัจจุบันมีสกิล 9 ตัว ตรวจด้วย `quick_validate.py` ที่มากับ Codex รวมถึง parse YAML ตรวจลิงก์ Markdown ภายใน และสแกนข้อมูลส่วนตัวก่อนเผยแพร่ ทดลองขั้นตอนคัดลอกในโฟลเดอร์ชั่วคราวและตรวจว่าหยุดเมื่อชื่อสกิลซ้ำ
 
-ผลเหล่านี้ยืนยันโครงสร้างแพ็กเกจ ไม่ได้รับประกันพฤติกรรมทุกงาน ยังไม่ได้ใช้การรัน GPU หรือกระทบยอดธุรกิจจริงเป็นหลักฐานรับรองแพ็กเกจนี้
+ผลเหล่านี้ยืนยันโครงสร้างแพ็กเกจ ไม่ได้รับประกันพฤติกรรมทุกงาน ยังไม่ได้ใช้การดึงข้อมูลวิจัย OCR การรัน GPU การฟัง TTS การ render วิดีโอ หรือกระทบยอดธุรกิจจริงเป็นหลักฐานรับรอง runtime ของแพ็กเกจนี้ การพบสกิลโดย host และการเรียกใช้จริงเป็นการตรวจแยกต่างหาก
+
+## แนวทางวิจัยและสื่อ
+
+ใช้ `$source-research` สำหรับเปรียบเทียบหลายแหล่ง วิจัยคู่แข่งหรือปัญหาลูกค้า และตรวจแหล่งข้อมูล การค้นข้อเท็จจริงเดียวไม่ต้องเพิ่ม workflow วิจัย เครื่องมือ Crawl4AI และ Docling เป็นตัวเลือกอ้างอิง ไม่ได้ bundled หรือติดตั้งอัตโนมัติ ความนิยม repo และไอเดียธุรกิจที่ AI สรุปเป็นเพียงจุดเริ่มค้น ไม่ใช่หลักฐานว่ามีคนจ่ายหรือมีกำไร
+
+งานวิดีโอมี [video-work.md](skills/bbilr-first-skills/references/video-work.md) ใช้เสริมสกิลเฉพาะทางที่มี เช่น Hyperframes โดยยึด brief ที่ตกลงแล้ว ตรวจข้อความไทย framing timing และเสียงจาก output จริง ไม่เพิ่มการสัมภาษณ์บังคับอีกชุด เสียงที่เลือกและเกณฑ์คุณภาพอยู่ในเอกสารโครงการ
 
 ## สิทธิ์การใช้และขอบเขต
 
 ใช้ [MIT License](LICENSE) นำไปใช้ แก้ไข และแจกจ่ายต่อได้ตามเงื่อนไขในไฟล์ license
 
-ชุดนี้มีสกิล 8 ตัวในตาราง แนวทางตามลักษณะงาน และตัวอย่างกฎ ไม่แจกจ่าย Ponytail, Superpowers, Compass Skills, Obsidian integration หรือ plugin ของผู้อื่น รวมถึงไม่เผยแพร่ memory ส่วนตัวหรือ config ของเครื่อง หลักการร่วมถูกเรียบเรียงเป็นคำแนะนำของชุดนี้เอง
+ชุดนี้มีสกิล 9 ตัวในตาราง แนวทางตามลักษณะงาน/วิดีโอ และตัวอย่างกฎ ไม่แจกจ่าย Ponytail, Superpowers, Compass Skills, Obsidian integration หรือ plugin ของผู้อื่น รวมถึงไม่เผยแพร่ memory ส่วนตัวหรือ config ของเครื่อง หลักการร่วมถูกเรียบเรียงเป็นคำแนะนำของชุดนี้เอง

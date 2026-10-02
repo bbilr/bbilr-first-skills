@@ -1,6 +1,6 @@
 ---
 name: local-ai-verification
-description: Verify local AI model files, dependencies, workflow execution, and generated artifacts. Use for ComfyUI or similar local inference setup, model compatibility checks, and image or video quality review; not for general AI news or remote-service recommendations.
+description: Verify local AI model files, dependencies, workflow execution, and generated artifacts. Use for ComfyUI or similar local inference setup, model compatibility checks, and image, audio, video, or TTS quality review; not for general AI news or remote-service recommendations.
 ---
 
 # Local AI Verification
@@ -20,6 +20,15 @@ Verify the requested workflow and artifact, using the project's own acceptance c
 - For character consistency, apply project-approved, pose-aware identity criteria and visual review. A similarity score alone does not establish acceptable face, anatomy, outfit, or framing. If no usable face is visible, report the metric's limitation.
 - Keep numerical checks and visual judgments separate. Report missing criteria instead of inventing thresholds.
 - Preserve approved datasets, identity references, partial downloads, and checkpoints. Do not clean them up as a side effect of verification.
+
+## Audio And TTS
+
+- Identify the actual engine/version, voice/model, supported language, input text, and pronunciation settings. Reuse the project's selected voice and approved audio; do not silently replace them for a new experiment.
+- Use a small representative sample covering relevant Thai text, proper nouns, numbers, mixed-language terms, or punctuation. Do not require cases absent from the requested output.
+- Check decode success, duration, and audio metadata separately from listening. A transcript match or valid audio file does not establish correct pronunciation, naturalness, or acceptable sound.
+- Listen when the host supports playback/review, checking omissions, repetitions, clipping, artifacts, pronunciation, and voice consistency as relevant. If listening is unavailable, explicitly report that audio quality was not listened to or verified.
+- Keep experimental output separate from reviewed assets. Preserve batch progress and checkpoints so a retry can resume without overwriting accepted audio or regenerating completed items unnecessarily.
+- Apply project-owned acceptance criteria. A passing sample does not prove consistency across a batch; user acceptance and technical checks are separate evidence.
 
 ## Report And Stop
 

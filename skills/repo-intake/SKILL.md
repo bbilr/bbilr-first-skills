@@ -19,6 +19,16 @@ Use this skill to avoid guessing about a repository.
 4. If changing code, inspect the files and callers on the touched path before editing.
 5. Verify with the narrowest meaningful check. Distinguish documented usage from locally executed usage. Stop when the question is answered or the requested change passes its checks.
 
+## Adoption Fit
+
+Use this section only when the user is considering adoption, reuse, or commercialization.
+
+- Connect the tool to a specific user workflow and compare it with tools already available. Recommend keeping the current tool, a bounded trial, or deferring adoption with a concrete reason.
+- Check only decision-relevant maintenance, supported versions/platforms, API costs, hardware needs, and ongoing upkeep. Do not turn a first-pass recommendation into an exhaustive audit.
+- Treat stars, repository rankings, and generated monetization summaries as discovery leads, not evidence of demand, reliability, or profit.
+- For commercial reuse, distinguish the code license from licenses for models, weights, datasets, and bundled assets. An open-source code license does not establish permission for every component.
+- Define the smallest representative trial and its observable success condition before recommending a larger setup. Keep documented capability separate from locally tested capability.
+
 ## Output
 
 Keep the answer compact:

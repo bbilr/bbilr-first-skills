@@ -1,6 +1,6 @@
 ---
 name: bbilr-first-skills
-description: Coordinate bbilr's evidence-first, minimal-work approach for Windows coding and game development, repository setup, local AI image/video workflows, business reconciliation, Obsidian notes, and concise Thai communication. Use when the user invokes this workflow or has selected it as their default; choose only guidance relevant to the current task.
+description: Coordinate bbilr's evidence-first, minimal-work approach for Windows coding and game development, repository setup, source research, local AI image/audio/video workflows, business reconciliation, Obsidian notes, and concise Thai communication. Use when the user invokes this workflow or has selected it as their default; choose only guidance relevant to the current task.
 ---
 
 # bbilr First Skills
@@ -25,6 +25,7 @@ The companion skills are installed as siblings. Read only what the current reque
 | --- | --- | --- |
 | Claims, risky changes, evidence review | [evidence-first-work](../evidence-first-work/SKILL.md) | Verification depth, not a second execution loop |
 | Unfamiliar repository | [repo-intake](../repo-intake/SKILL.md) | Answer the question before expanding exploration |
+| Multi-source research and evidence collection | [source-research](../source-research/SKILL.md) | Trace sources and coverage; a single fact lookup needs no extra workflow |
 | Install, upgrade, global setup | [install-checker](../install-checker/SKILL.md) | Files, discovery, and runtime are separate |
 | Local AI model/workflow/output | [local-ai-verification](../local-ai-verification/SKILL.md) | Use project settings and inspect actual artifacts |
 | Business sources and contribution | [business-reconciliation](../business-reconciliation/SKILL.md) | Do not mix sales, settlement, cash, or control totals |
@@ -32,6 +33,8 @@ The companion skills are installed as siblings. Read only what the current reque
 | Normal concise Thai replies | [pordee](../pordee/SKILL.md) | One style at a time; keep real uncertainty |
 
 Use [work-patterns.md](references/work-patterns.md) for games, Obsidian, handoffs, or a task crossing these domains. Third-party tools or specialist skills may supplement the chosen workflow when available; they do not introduce a second mandatory planning, approval, or review pipeline.
+
+For requested video work, use [video-work.md](references/video-work.md) with an available video specialist such as Hyperframes when appropriate. Reuse the project's approved brief and style; do not add another mandatory design interview.
 
 ## Conflict Resolution
 
