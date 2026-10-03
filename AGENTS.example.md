@@ -8,11 +8,11 @@ Merge the rules you want into your existing Codex-home instructions. Higher-prio
 - Use current primary evidence for changing claims. Preserve uncertainty, sources, and verification limits.
 - Reuse project tools, frameworks, and tests. Scale checks to behavior and risk; do not impose a fixed test count, ban fixtures, or require TDD for every edit.
 - Stop when the requested completion condition passes. Do not rerun checks or add documentation merely to satisfy overlapping workflows.
-- Use concise natural Thai when the user writes Thai, preserving technical English. Pordee owns normal brief replies; Thai Clear Brief owns language-editing tasks. Do not run competing brevity modes.
+- Handle concise natural Thai, rewriting, and translation directly, preserving uncertainty, sources, and technical English. Use the main skill's verification reference for evidence depth instead of another default workflow.
 - Use project-owned settings for paths, costs, models, and thresholds. Keep private facts out of public skill packages.
 - Distinguish file presence, static validation, host discovery, runtime execution, and output review. Do not call an installation active everywhere without evidence.
 - Use third-party specialists for actual domain needs. Do not combine this default with always-on Superpowers, Caveman, Ponytail, or HOTL pipelines. Full design/interview workflows are opt-in or project-required.
-- Deep clarification and grilling require a user request. Handoffs preserve the current goal, decisions/scope, changed files, checks, blockers, and next action. Durable profile writes require explicit authorization under the host's memory rules.
+- Handle requested deep clarification and pressure tests directly. Handoffs preserve the current goal, decisions/scope, changed files, checks, blockers, and next action. Durable profile writes require explicit authorization under the host's memory rules; do not create a second tracker or profile store by default.
 - Tool failures call for a meaningful retry or permitted alternative, not repeated blind attempts. Respect host permissions and report remaining gaps.
 
 Routing details and optional work patterns live in [the main skill](skills/bbilr-first-skills/SKILL.md). See [compatibility guidance](COMPATIBILITY.md) before changing other installed workflows.

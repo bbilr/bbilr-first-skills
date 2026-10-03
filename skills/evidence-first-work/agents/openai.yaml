@@ -1,6 +1,0 @@
-interface:
-  display_name: "Evidence First Work"
-  short_description: "Evidence-led cautious execution"
-  default_prompt: "Use $evidence-first-work to handle this task with evidence, clear assumptions, and minimal necessary work."
-policy:
-  allow_implicit_invocation: true

@@ -2,9 +2,9 @@
 
 [ภาษาไทย](README.th.md)
 
-One coordinating skill and eight focused companions for bbilr's working style: concise Thai with technical English, evidence before claims, minimal implementation, and no repeated approval inside an agreed scope. Covers Windows coding and game development, repository setup, source research, local AI image/audio/video workflows, business reconciliation, and Obsidian research notes.
+One coordinating skill and five focused companions for bbilr's working style: concise Thai with technical English, evidence before claims, minimal implementation, and no repeated approval inside an agreed scope. Covers Windows coding and game development, repository setup, source research, local AI image/audio/video workflows, business reconciliation, and Obsidian research notes.
 
-Formerly `bbilr/evidence-first-skills`. The repository is renamed, not duplicated. Existing companion skill names remain compatible; the new entry point is `$bbilr-first-skills`.
+Formerly `bbilr/evidence-first-skills`. The repository is renamed, not duplicated. The entry point is `$bbilr-first-skills`; retained companions keep their names. Generic evidence and Thai-style companions have been consolidated into the main workflow and global preferences.
 
 These are instructions, not background services. They do not add tools, bypass permissions, guarantee correctness, or automatically persist state across sessions.
 
@@ -13,14 +13,11 @@ These are instructions, not background services. They do not add tools, bypass p
 | Skill | Purpose | Example request |
 | --- | --- | --- |
 | [bbilr-first-skills](skills/bbilr-first-skills/SKILL.md) | Select one workflow, preserve settled decisions, and apply the relevant domain guidance. | `Use $bbilr-first-skills to handle this task with evidence and concise Thai.` |
-| [evidence-first-work](skills/evidence-first-work/SKILL.md) | Tie claims to evidence, honor settled decisions, verify and stop at the requested scope. | `Use $evidence-first-work to fix this bug and report the checks actually run.` |
 | [repo-intake](skills/repo-intake/SKILL.md) | Understand a repository, adoption fit, and component licenses without unnecessary installation. | `Use $repo-intake to explain this repository and its supported setup.` |
 | [source-research](skills/source-research/SKILL.md) | Collect multi-source evidence with dates, locators, scope, and unresolved gaps. | `Use $source-research to compare competitors with traceable sources and separate facts from inference.` |
 | [install-checker](skills/install-checker/SKILL.md) | Separate global/project scope and verify installed-version compatibility, discovery, and execution. | `Use $install-checker to install this tool globally and verify what works.` |
 | [local-ai-verification](skills/local-ai-verification/SKILL.md) | Check model/workflow dependencies and actual image, audio, video, or Thai TTS output. | `Use $local-ai-verification to check this Thai TTS sample and distinguish decode checks from listening.` |
 | [business-reconciliation](skills/business-reconciliation/SKILL.md) | Reconcile business records without double counting; review OCR drafts before confirming totals. | `Use $business-reconciliation to reconcile these exports and list unmatched rows.` |
-| [thai-clear-brief](skills/thai-clear-brief/SKILL.md) | Write natural, concise Thai while retaining uncertainty and technical detail. | `Use $thai-clear-brief to rewrite this explanation in clear Thai.` |
-| [pordee](skills/pordee/SKILL.md) | Use a concise Thai style with lite/full/stop controls and honest statistics. | `Use $pordee in lite mode to summarize the result.` |
 
 ## Install For Codex On Windows
 
@@ -35,7 +32,7 @@ $skillHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $env:USER
 $destination = Join-Path $skillHome 'skills'
 $selected = @(Get-ChildItem -LiteralPath ./skills -Directory)
 # To install only selected skills, replace the line above, for example:
-# $selected = @(Get-Item ./skills/evidence-first-work, ./skills/install-checker)
+# $selected = @(Get-Item ./skills/repo-intake, ./skills/install-checker)
 
 $ErrorActionPreference = 'Stop'
 foreach ($skill in $selected) {
@@ -57,7 +54,7 @@ The command installs per-user skill files, not machine-wide services or project 
 2. In a new Codex session, check whether the skill appears in the available skill list. If absent, verify the active Codex home and host-specific reload behavior. A new session alone is not proof of discovery.
 3. Invoke a skill explicitly with an example above and inspect whether its guidance was actually applied. Files present, discovery, and successful use are separate checks.
 
-Automatic selection is permitted by the supplied metadata but is not guaranteed on every request. To use this as your main workflow, review and merge [AGENTS.example.md](AGENTS.example.md) into your existing Codex-home `AGENTS.md`. Do not overwrite unrelated instructions. The main skill selects companions; it does not load all of them on every turn. Use Pordee for normal brief Thai and Thai Clear Brief for language-editing tasks.
+Automatic selection is permitted by the supplied metadata but is not guaranteed on every request. To use this as your main workflow, review and merge [AGENTS.example.md](AGENTS.example.md) into your existing Codex-home `AGENTS.md`. Do not overwrite unrelated instructions. The main skill selects companions; it does not load all of them on every turn. Handle Thai communication, ordinary planning, clarification, and pressure tests directly without extra process or style skills.
 
 See [Compatibility And Migration](COMPATIBILITY.md) for conflicting workflow categories, the reference migration, and how to avoid reintroducing duplicate routers. Installation copies skills only: it does not disable other plugins, rewrite global instructions, or migrate an existing setup without your explicit action.
 
@@ -69,9 +66,11 @@ Use `git pull --ff-only` in the checkout, review the diff, and back up existing 
 
 For an existing checkout of the old repository, update its remote with `git remote set-url origin https://github.com/bbilr/bbilr-first-skills.git`, then pull. Existing installed companion folders do not need a name change. Install the new `bbilr-first-skills` folder and merge the new defaults to adopt the coordinating workflow; review changes before replacing any customized companion.
 
+This lean version retires `evidence-first-work`, `pordee`, and `thai-clear-brief` as separate skills. Evidence checks now live in [verification.md](skills/bbilr-first-skills/references/verification.md); language preferences live in the main skill/defaults. After reviewing custom changes, archive only those retired installed folders outside skill discovery and update old routing. A pull or fresh install does not remove previously installed copies or alter another plugin. Preserve task/profile data and project records when retiring their tools.
+
 ## Validation And Limitations
 
-The current package is checked with Codex's bundled `quick_validate.py` for all nine skills, YAML parsing, local Markdown link checks, and a public-file privacy scan. A disposable install-copy smoke test checks file layout and refusal to overwrite existing skills. These checks establish package structure, not improved behavior in every future task. Research extraction, OCR, GPU runs, TTS listening, video rendering, and business reconciliations are not runtime acceptance evidence for this package. Host discovery and actual invocation are separate checks.
+The current package is checked with Codex's bundled `quick_validate.py` for all six skills, YAML parsing, local Markdown link checks, and a public-file privacy scan. A disposable install-copy smoke test checks file layout and refusal to overwrite existing skills. These checks establish package structure, not improved behavior in every future task. Research extraction, OCR, GPU runs, TTS listening, video rendering, and business reconciliations are not runtime acceptance evidence for this package. Host discovery and actual invocation are separate checks.
 
 ## Research And Media Guidance
 
@@ -81,4 +80,4 @@ For video requests, [video-work.md](skills/bbilr-first-skills/references/video-w
 
 ## License And Scope
 
-[MIT License](LICENSE). You may use, modify, and redistribute this package under its license. This release contains the nine skills listed above, work-pattern/video guidance, and optional defaults. It does not redistribute Ponytail, Superpowers, Compass Skills, Obsidian integrations, other installed plugins, private memories, or host configuration. Shared principles are expressed in this package's own instructions; third-party packages retain their own ownership and licenses.
+[MIT License](LICENSE). You may use, modify, and redistribute this package under its license. This release contains the six skills listed above, work-pattern/video/verification guidance, and optional defaults. It does not redistribute Ponytail, Superpowers, Compass Skills, Obsidian integrations, other installed plugins, private memories, or host configuration. Shared principles are expressed in this package's own instructions; third-party packages retain their own ownership and licenses.

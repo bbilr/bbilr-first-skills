@@ -2,7 +2,7 @@
 
 ## One Workflow Owner / ใช้ workflow หลักชุดเดียว
 
-`bbilr-first-skills` coordinates its eight companions. Domain tools and skills remain useful; multiple mandatory process owners are the source of conflict. An installed file is not proof that its rules are active, and changing config does not rewrite an already-loaded conversation.
+`bbilr-first-skills` coordinates its five companions. Evidence depth lives in its verification reference; ordinary Thai communication, planning, and interviews do not need separate generic skills. Domain tools and skills remain useful; multiple mandatory process owners are the source of conflict. An installed file is not proof that its rules are active, and changing config does not rewrite an already-loaded conversation.
 
 ตัวหลักเลือกสกิลเฉพาะงานที่จำเป็น เครื่องมือด้านเกม การเงิน วิจัย และ Obsidian ยังใช้ร่วมกันได้ การติดตั้งไฟล์ไม่ใช่หลักฐานว่า session โหลดกฎแล้ว และการเปลี่ยน config ไม่ได้ล้างคำสั่งที่โหลดไปก่อนหน้า
 
@@ -17,9 +17,9 @@
 
 ## Reference Migration / การย้ายชุดอ้างอิง
 
-The maintainer's migration disables the installed Superpowers variants, Caveman, Ponytail, and HOTL plugins. It disables only Aegis's competing router and brevity skill, keeping other Aegis specialists available. Standalone Caveman and brainstorming copies are archived outside discovery. The installed Compass Task Clarifier is adapted locally and made explicit-only; that third-party file is not redistributed here.
+The maintainer's approved lean migration removes the installed Superpowers variants, Caveman, Ponytail, HOTL, Dev Skills, AgentOps, and AgiFlow plugins; Aegis was already absent. Retired standalone process/style skills are archived outside discovery, with task/profile data left intact. One Unity MCP skill copy is retained. These local packages and their private backups are not redistributed here.
 
-ในการย้ายชุดของผู้ดูแล ปิด Superpowers ทั้งสองรายการ, Caveman, Ponytail และ HOTL; Aegis ปิดเฉพาะ router กับสกิลภาษาแบบย่อ ส่วนเฉพาะด้านยังอยู่ ย้าย Caveman และ brainstorming สำเนาเดี่ยวออกจากโฟลเดอร์สกิล ปรับ Task Clarifier ในเครื่องให้เรียกเมื่อขอโดยตรง และไม่แจกจ่ายไฟล์จากผู้พัฒนารายอื่นใน repo นี้
+ในการย้ายชุดที่อนุมัติ ถอน Superpowers ทั้งสองรายการ, Caveman, Ponytail, HOTL, Dev Skills, AgentOps และ AgiFlow ส่วน Aegis ไม่อยู่แล้ว ย้ายสกิล process/style ที่ถอนออกนอก discovery โดยเก็บข้อมูล task/profile ไว้ และเก็บ Unity MCP เพียงสำเนาเดียว ไม่แจกจ่ายแพ็กเกจเหล่านี้หรือ backup ส่วนตัวใน repo นี้
 
 These are explicit migration choices, not actions performed by the README installer. For another setup, inspect exact installed names and versions first. Do not disable an unrelated domain plugin merely because it also recommends verification.
 

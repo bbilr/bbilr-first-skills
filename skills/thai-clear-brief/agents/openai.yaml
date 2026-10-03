@@ -1,7 +1,0 @@
-interface:
-  display_name: "Thai Clear Brief"
-  short_description: "เขียนไทยให้สั้น ชัด จับใจความง่าย"
-  default_prompt: "Use $thai-clear-brief to rewrite this Thai text so it is concise, clear, and easy to understand."
-
-policy:
-  allow_implicit_invocation: true

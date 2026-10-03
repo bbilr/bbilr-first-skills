@@ -23,14 +23,12 @@ The companion skills are installed as siblings. Read only what the current reque
 
 | Request | Companion | Boundary |
 | --- | --- | --- |
-| Claims, risky changes, evidence review | [evidence-first-work](../evidence-first-work/SKILL.md) | Verification depth, not a second execution loop |
+| Claims, risky changes, evidence review | [verification.md](references/verification.md) | Evidence depth inside this workflow, not another router |
 | Unfamiliar repository | [repo-intake](../repo-intake/SKILL.md) | Answer the question before expanding exploration |
 | Multi-source research and evidence collection | [source-research](../source-research/SKILL.md) | Trace sources and coverage; a single fact lookup needs no extra workflow |
 | Install, upgrade, global setup | [install-checker](../install-checker/SKILL.md) | Files, discovery, and runtime are separate |
 | Local AI model/workflow/output | [local-ai-verification](../local-ai-verification/SKILL.md) | Use project settings and inspect actual artifacts |
 | Business sources and contribution | [business-reconciliation](../business-reconciliation/SKILL.md) | Do not mix sales, settlement, cash, or control totals |
-| Thai rewriting, translation, explanation | [thai-clear-brief](../thai-clear-brief/SKILL.md) | Preserve meaning and required detail |
-| Normal concise Thai replies | [pordee](../pordee/SKILL.md) | One style at a time; keep real uncertainty |
 
 Use [work-patterns.md](references/work-patterns.md) for games, Obsidian, handoffs, or a task crossing these domains. Third-party tools or specialist skills may supplement the chosen workflow when available; they do not introduce a second mandatory planning, approval, or review pipeline.
 
@@ -43,6 +41,7 @@ For requested video work, use [video-work.md](references/video-work.md) with an 
 - Brevity never removes uncertainty, sources needed for the conclusion, or requested explanation. Do not force English prose onto Thai requests or translate exact technical identifiers.
 - No skill text authorizes commits, publication, deletion, spending, or new external actions outside the user's scope. Existing authorization remains valid; environment permission controls still apply.
 - A user-requested deep interview or formal workflow is allowed. Otherwise use this workflow as the owner and specialist skills only for their relevant expertise.
+- Handle ordinary planning, clarification, pressure tests, and Thai rewriting directly. Do not reinstall retired process or style skills to perform these tasks. For the user's audience-facing voice, use `bbilr-writing` when available and relevant, not for ordinary technical replies.
 
 ## Delivery
 
