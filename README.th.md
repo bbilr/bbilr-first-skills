@@ -36,6 +36,8 @@ Impeccable, bbilr-writing และ session-handoff-prompt เป็นตัว
 
 ## การอัปเดตและข้อจำกัด
 
+การลดชุดรอบที่สองถอน studio-gate-check และ dialogue-pipeline โดยเก็บ [เทมเพลตบทสนทนา](skills/bbilr-first-skills/references/dialogue-template.md) ไว้ ผู้ดูแลปิด Generative Media Skills ของ MuAPI และ Unity Agent Workflows ระดับ global ส่วน Stark เก็บไว้ใช้เฉพาะช่องว่างด้านแพลตฟอร์ม [กฎร่วมกับสกิลภายนอก](skills/bbilr-first-skills/references/specialist-compatibility.md) กำหนดให้ตอบไทยแทนค่าเริ่มต้นภาษาจีน และไม่ถามอนุมัติซ้ำเมื่อมีสิทธิ์อยู่แล้ว โดยยังรักษาขอบเขตงานและข้อจำกัดของเครื่องมือ ไม่แก้ vendor cache และไม่เปลี่ยนปลั๊กอินของผู้ติดตั้งให้อัตโนมัติ
+
 สำรองสกิลเดิมนอกโฟลเดอร์ค้นสกิลก่อนอัปเดต เปรียบเทียบและรวมเฉพาะสิ่งที่ต้องการ อย่าทับการแก้ไขใหม่ ตัวอย่าง [AGENTS.example.md](AGENTS.example.md) เป็นส่วนเสริม ไม่ควรทับคำสั่งเดิม
 
 ไม่เผยแพร่พาธส่วนตัว รหัสลับ บันทึกข้อสังเกต memory หรือ config ของเครื่อง ฉบับสาธารณะให้ผู้ใช้เลือกที่เก็บข้อเสนอเอง

@@ -16,6 +16,8 @@ AGENTS.md owns general execution, approval, testing and delivery rules. This ski
 
 ## Specialist Selection
 
+For third-party workflows follow [specialist compatibility](references/specialist-compatibility.md); for branching dialogue use the optional [dialogue template](references/dialogue-template.md) instead of a separate process skill.
+
 Use only the guidance that adds something to the current task:
 - Installation or global setup: [install-checker](../install-checker/SKILL.md).
 - Local AI artifacts, GPU execution or Thai audio: [local-ai-verification](../local-ai-verification/SKILL.md).

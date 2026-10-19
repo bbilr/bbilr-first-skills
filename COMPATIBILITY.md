@@ -20,6 +20,12 @@ Five skills: bbilr-first-skills, install-checker, local-ai-verification, busines
 
 ## Recovery And Updates / กู้คืนและอัปเดต
 
+The second maintainer cleanup also backs up and removes studio-gate-check and dialogue-pipeline, retaining an optional dialogue template. It disables generative-media-skills@awesome-codex-plugins (MuAPI) and unity-agent-workflows@awesome-codex-plugins globally. Stark is retained with narrower routing. Do not disable unrelated game, finance, document or Cloudflare tools.
+
+Apply the package's specialist-compatibility reference from your user instructions to override language and repeated-approval defaults. Do not patch managed plugin caches. Financial routing uses a single planning pass; this does not remove or modify financial tools. RunComfy, Cloudflare One and Sandbox variants remain task-specific, not automatically invoked or removed.
+
+รอบที่สองสำรองก่อนถอนสองเช็กลิสต์ ปิด MuAPI กับ workflow Unity ส่วนเกิน ใช้กฎเสริมส่วนกลางแทนการแก้ cache เก็บเครื่องมือเฉพาะทางอื่นไว้ และไม่เปลี่ยนการเชื่อมต่อหรือสิทธิ์ของบริการ
+
 Restore only the intended backed-up folder or setting after comparing later edits. Do not replace an entire current config to undo one plugin flag. Do not modify managed plugin caches. Stage upstream updates and preserve local boundaries before installing.
 
 กู้คืนเฉพาะรายการที่ต้องการ รักษาการแก้ไขใหม่ ไม่ทับ config ทั้งไฟล์เพื่อเปิดปลั๊กอินตัวเดียว และไม่แก้ vendor cache

@@ -56,6 +56,8 @@ The maintainer's lean configuration disables Universal Design Principles and rem
 
 ## Updates, Privacy And Limits
 
+The second cleanup retires the generic studio-gate-check and dialogue-pipeline skills. A small [dialogue template](skills/bbilr-first-skills/references/dialogue-template.md) preserves the useful planning fields. The maintainer disabled MuAPI's Generative Media Skills and Unity Agent Workflows globally; Stark remains available for specific platform gaps. [Specialist compatibility](skills/bbilr-first-skills/references/specialist-compatibility.md) overrides Chinese-only report defaults and redundant approval prompts while preserving scope and host permissions. These are user-owned instructions, not vendor cache edits; installing this repository does not change plugin settings automatically.
+
 Back up customized installed folders outside skill discovery before updates. Review changes and copy only the intended files; do not overwrite later edits. Merge the small [AGENTS example](AGENTS.example.md) into existing instructions only if useful.
 
 Do not publish private paths, credentials, observations, memory or host configuration. The public Task Observer uses an adopter-selected storage directory instead of the maintainer's private path.
