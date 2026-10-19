@@ -1,42 +1,35 @@
-# Compatibility And Migration / ความเข้ากันได้และการย้ายชุด
+# Compatibility And Migration / การย้ายชุด
 
-## One Workflow Owner / ใช้ workflow หลักชุดเดียว
+## Current Package / ชุดปัจจุบัน
 
-`bbilr-first-skills` coordinates its five companions. Evidence depth lives in its verification reference; ordinary Thai communication, planning, and interviews do not need separate generic skills. Domain tools and skills remain useful; multiple mandatory process owners are the source of conflict. An installed file is not proof that its rules are active, and changing config does not rewrite an already-loaded conversation.
+Five skills: bbilr-first-skills, install-checker, local-ai-verification, business-reconciliation, and the separately licensed task-observer adaptation. AGENTS.md owns general work rules. Optional external specialists are not bundled.
 
-ตัวหลักเลือกสกิลเฉพาะงานที่จำเป็น เครื่องมือด้านเกม การเงิน วิจัย และ Obsidian ยังใช้ร่วมกันได้ การติดตั้งไฟล์ไม่ใช่หลักฐานว่า session โหลดกฎแล้ว และการเปลี่ยน config ไม่ได้ล้างคำสั่งที่โหลดไปก่อนหน้า
+มี 5 สกิลตาม README ให้ AGENTS.md ดูแลกฎทั่วไป สกิลเสริมเฉพาะงาน ไม่ต้องโหลดทุกตัว
 
-| Conflict | Replacement / วิธีจัดการ |
-| --- | --- |
-| Load a skill at 1% relevance; multiple always-on routers | Select actual task fit through one main workflow / เลือกตามงานจริงผ่านตัวหลักเดียว |
-| Design approval for every small edit | Ask only about material unresolved decisions / ถามเฉพาะเรื่องสำคัญที่ยังไม่ตกลง |
-| Remove all hedging; unsupported token-saving claims | Preserve evidence-based uncertainty; use measured telemetry only / เก็บความไม่แน่ใจและใช้สถิติที่วัดได้ |
-| Fixed test count, no frameworks/fixtures, or unconditional TDD | Reuse project tests and scale to risk / ใช้เครื่องมือเดิมและทดสอบตามความเสี่ยง |
-| Ask again after the user delegates a routine choice | Decide within delegated scope / ตัดสินใจในขอบเขตที่มอบหมาย |
-| Multiple copies of the same skill | Keep one intended version; archive the other outside skill discovery / เก็บเวอร์ชันที่ใช้จริงและย้ายสำเนาออกนอกโฟลเดอร์สกิล |
+## Migration / วิธีปรับชุดเดิม
 
-## Reference Migration / การย้ายชุดอ้างอิง
+1. Back up the exact installed folders and configuration outside skill discovery and public Git repositories. Verify backup contents before removal.
+2. Review local customizations in repo-intake and source-research; their compact source/adoption checks now live in bbilr-first-skills.
+3. Remove only the approved installed copies of repo-intake, source-research and, if adopting the maintainer's configuration, find-skills. Updating this checkout does not uninstall them.
+4. Merge the main skill update; remove stale references to retired skills.
+5. Install the Task Observer adaptation with allow_implicit_invocation=false. Do not add always-on activation or scheduling. A review may propose changes, not automatically apply them.
+6. If adopting the maintainer's design setup, disable the exact Universal Design Principles plugin through supported host settings. Keep Impeccable as the optional frontend specialist and use other platform specialists only when relevant.
+7. Reload as required by the host and inspect effective skill discovery. Project-level settings and old conversations may retain different state.
 
-The maintainer's approved lean migration removes the installed Superpowers variants, Caveman, Ponytail, HOTL, Dev Skills, AgentOps, and AgiFlow plugins; Aegis was already absent. Retired standalone process/style skills are archived outside discovery, with task/profile data left intact. One Unity MCP skill copy is retained. These local packages and their private backups are not redistributed here.
+สำรองและตรวจไฟล์ก่อนถอน รวมกฎที่ปรับเองก่อนเปลี่ยนตัวหลัก task-observer เรียกเฉพาะเมื่อขอทบทวน การติดตั้งไม่ปิดปลั๊กอินหรือถอนสกิลอื่นให้เอง ต้องตรวจสถานะจริงหลังโหลดใหม่
 
-ในการย้ายชุดที่อนุมัติ ถอน Superpowers ทั้งสองรายการ, Caveman, Ponytail, HOTL, Dev Skills, AgentOps และ AgiFlow ส่วน Aegis ไม่อยู่แล้ว ย้ายสกิล process/style ที่ถอนออกนอก discovery โดยเก็บข้อมูล task/profile ไว้ และเก็บ Unity MCP เพียงสำเนาเดียว ไม่แจกจ่ายแพ็กเกจเหล่านี้หรือ backup ส่วนตัวใน repo นี้
+## Recovery And Updates / กู้คืนและอัปเดต
 
-These are explicit migration choices, not actions performed by the README installer. For another setup, inspect exact installed names and versions first. Do not disable an unrelated domain plugin merely because it also recommends verification.
+Restore only the intended backed-up folder or setting after comparing later edits. Do not replace an entire current config to undo one plugin flag. Do not modify managed plugin caches. Stage upstream updates and preserve local boundaries before installing.
 
-รายการนี้เป็นการปรับที่ตั้งใจทำ ไม่ใช่สิ่งที่คำสั่งติดตั้งทำอัตโนมัติ เครื่องอื่นต้องตรวจชื่อและเวอร์ชันจริงก่อน อย่าปิดสกิลเฉพาะด้านเพียงเพราะมีกฎตรวจหลักฐานเหมือนกัน
+กู้คืนเฉพาะรายการที่ต้องการ รักษาการแก้ไขใหม่ ไม่ทับ config ทั้งไฟล์เพื่อเปิดปลั๊กอินตัวเดียว และไม่แก้ vendor cache
 
-## Supported Controls / วิธีตั้งค่าที่รองรับ
+The public observer asks adopters to select a private durable directory outside skill discovery; local maintainer paths are not shipped. No private memory, logs, configuration or backups are included.
 
-Codex documents per-skill `[[skills.config]]` overrides and restarting after a configuration change in [Build skills](https://learn.chatgpt.com/docs/build-skills). Plugin enablement uses `plugins.<plugin>.enabled` as documented in the [Configuration Reference](https://learn.chatgpt.com/docs/config-file/config-reference). Match your actual plugin ID or skill path; do not copy another user's absolute paths.
+ฉบับสาธารณะไม่ระบุพาธส่วนตัว ไม่รวม memory, log, config หรือสำรองของผู้ดูแล
 
-ใช้การตั้งค่าเปิด/ปิดที่ Codex รองรับ และ restart หลังแก้ config จากนั้นตรวจรายการสกิลอีกครั้ง อย่าอ้างว่าเปลี่ยนแล้วทุก session เพียงเพราะไฟล์ config ผ่าน TOML parser
+## Evidence Limits / ข้อจำกัด
 
-Back up configuration and standalone skills before migration. Keep backups outside public repositories and skill discovery. Restore only the specific setting or archived folder you intend to recover, preserving later user changes. Do not patch vendor cache files: updates can replace them. Path-specific skill exclusions may need updating after a plugin version change; recheck them when updating plugins. Trusted project settings can override plugin enablement, so verify the effective host/project state.
+Static validation, YAML policy checks and link checks establish package structure only. They do not prove runtime quality, improved reasoning, automatic activation or token savings. A separate CLI/runtime bundled by an external specialist remains outside this package.
 
-สำรอง config และสกิลก่อนย้าย เก็บนอก public repo และนอกโฟลเดอร์ที่ค้นสกิล กู้คืนเฉพาะรายการที่ต้องการโดยรักษาการแก้ไขใหม่ไว้ ไม่แก้ไฟล์ vendor cache เพราะอัปเดตอาจทับ การปิดสกิลตาม path ต้องตรวจใหม่เมื่อเวอร์ชัน plugin เปลี่ยน และค่า project อาจทับค่าเปิด/ปิดระดับผู้ใช้
-
-## Scope Of Verification / ขอบเขตการตรวจ
-
-Package validators and configuration parsing establish structure only. Verify catalog discovery in a fresh host session, then try a representative task. Neither this package nor a migration promises zero mistakes, automatic activation in all environments, or a measured reduction in token usage.
-
-validator ยืนยันโครงสร้างเท่านั้น ต้องตรวจการค้นพบใน session ใหม่และทดลองงานจริง ชุดนี้ไม่รับประกันว่าจะไม่มีข้อผิดพลาด ใช้อัตโนมัติทุก environment หรือประหยัด token เป็นตัวเลขใด
+การตรวจไฟล์ไม่ยืนยันคุณภาพงานหรือความแม่นยำของโมเดล ต้องทดสอบงานจริงแยกกัน

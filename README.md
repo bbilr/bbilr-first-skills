@@ -2,42 +2,35 @@
 
 [ภาษาไทย](README.th.md)
 
-One coordinating skill and five focused companions for bbilr's working style: concise Thai with technical English, evidence before claims, minimal implementation, and no repeated approval inside an agreed scope. Covers Windows coding and game development, repository setup, source research, local AI image/audio/video workflows, business reconciliation, and Obsidian research notes.
+A small, Thai-first skill set for Windows-based coding, game projects, local AI verification and business reconciliation. General execution, approvals and delivery belong in your AGENTS.md; this package adds focused checks and selects relevant specialists instead of another mandatory planning workflow.
 
-Formerly `bbilr/evidence-first-skills`. The repository is renamed, not duplicated. The entry point is `$bbilr-first-skills`; retained companions keep their names. Generic evidence and Thai-style companions have been consolidated into the main workflow and global preferences.
+## Included Skills
 
-These are instructions, not background services. They do not add tools, bypass permissions, guarantee correctness, or automatically persist state across sessions.
+| Skill | Actual use |
+| --- | --- |
+| [bbilr-first-skills](skills/bbilr-first-skills/SKILL.md) | Compact source/adoption checks and specialist selection. |
+| [install-checker](skills/install-checker/SKILL.md) | Separate installation scope, file presence, host discovery and tested execution. |
+| [local-ai-verification](skills/local-ai-verification/SKILL.md) | Verify actual image/audio/video output, including Thai TTS; preserve project settings and batch progress. |
+| [business-reconciliation](skills/business-reconciliation/SKILL.md) | Keep sales, settlements and bank cash distinct; avoid duplicate revenue. |
+| [task-observer](skills/task-observer/SKILL.md) | Explicitly requested workflow/skill review. Propose a patch; apply only after approval. No background observation. |
 
-## Skills
+Use ordinary model capabilities for planning, repository explanations, source research and skill discovery. The former standalone repo-intake and source-research instructions are consolidated into the main skill. Find Skills is not bundled or required.
 
-| Skill | Purpose | Example request |
-| --- | --- | --- |
-| [bbilr-first-skills](skills/bbilr-first-skills/SKILL.md) | Select one workflow, preserve settled decisions, and apply the relevant domain guidance. | `Use $bbilr-first-skills to handle this task with evidence and concise Thai.` |
-| [repo-intake](skills/repo-intake/SKILL.md) | Understand a repository, adoption fit, and component licenses without unnecessary installation. | `Use $repo-intake to explain this repository and its supported setup.` |
-| [source-research](skills/source-research/SKILL.md) | Collect multi-source evidence with dates, locators, scope, and unresolved gaps. | `Use $source-research to compare competitors with traceable sources and separate facts from inference.` |
-| [install-checker](skills/install-checker/SKILL.md) | Separate global/project scope and verify installed-version compatibility, discovery, and execution. | `Use $install-checker to install this tool globally and verify what works.` |
-| [local-ai-verification](skills/local-ai-verification/SKILL.md) | Check model/workflow dependencies and actual image, audio, video, or Thai TTS output. | `Use $local-ai-verification to check this Thai TTS sample and distinguish decode checks from listening.` |
-| [business-reconciliation](skills/business-reconciliation/SKILL.md) | Reconcile business records without double counting; review OCR drafts before confirming totals. | `Use $business-reconciliation to reconcile these exports and list unmatched rows.` |
+## Install And Use
 
-## Install For Codex On Windows
-
-Prerequisites: Git and PowerShell. Run the following from a directory where you want the repository checkout. It uses `CODEX_HOME` when set, otherwise your user profile's `.codex` directory.
+From a new checkout, run in PowerShell:
 
 ```powershell
 git clone https://github.com/bbilr/bbilr-first-skills.git
 if ($LASTEXITCODE -ne 0) { throw 'Clone failed' }
 Set-Location bbilr-first-skills
-
+$ErrorActionPreference = 'Stop'
 $skillHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $env:USERPROFILE '.codex' }
 $destination = Join-Path $skillHome 'skills'
 $selected = @(Get-ChildItem -LiteralPath ./skills -Directory)
-# To install only selected skills, replace the line above, for example:
-# $selected = @(Get-Item ./skills/repo-intake, ./skills/install-checker)
-
-$ErrorActionPreference = 'Stop'
 foreach ($skill in $selected) {
     if (Test-Path -LiteralPath (Join-Path $destination $skill.Name)) {
-        throw "Already installed: $($skill.Name). Review and back up before updating."
+        throw "Already installed: $($skill.Name). Back up and review before updating."
     }
 }
 New-Item -ItemType Directory -Force -Path $destination | Out-Null
@@ -46,38 +39,31 @@ foreach ($skill in $selected) {
 }
 ```
 
-The command installs per-user skill files, not machine-wide services or project dependencies. For other operating systems, copy the selected skill folders to the active Codex home's `skills` directory using your normal file tools. Other agents may support `SKILL.md`, but their discovery paths and invocation syntax must be checked separately; `agents/openai.yaml` is Codex-specific metadata.
+This installs user-level instructions only. It does not install runtimes, modify global configuration, remove old skills or disable plugins. Check the next session's skill list; file presence alone is not discovery or successful use.
 
-## Verify And Use
+Examples:
+- `Use $install-checker to verify this Windows installation.`
+- `Use $local-ai-verification to check this Thai TTS output.`
+- `Use $task-observer to review recurring problems and propose changes without applying them.`
 
-1. Check that each installed folder contains `SKILL.md` and `agents/openai.yaml`.
-2. In a new Codex session, check whether the skill appears in the available skill list. If absent, verify the active Codex home and host-specific reload behavior. A new session alone is not proof of discovery.
-3. Invoke a skill explicitly with an example above and inspect whether its guidance was actually applied. Files present, discovery, and successful use are separate checks.
+Task Observer has `allow_implicit_invocation: false`. It runs only on explicit review requests/invocation, never as a side effect of normal work, and requires approval before applying proposed skill changes. Other hosts must enforce the same boundary through their supported controls.
 
-Automatic selection is permitted by the supplied metadata but is not guaranteed on every request. To use this as your main workflow, review and merge [AGENTS.example.md](AGENTS.example.md) into your existing Codex-home `AGENTS.md`. Do not overwrite unrelated instructions. The main skill selects companions; it does not load all of them on every turn. Handle Thai communication, ordinary planning, clarification, and pressure tests directly without extra process or style skills.
+## Optional Specialists
 
-See [Compatibility And Migration](COMPATIBILITY.md) for conflicting workflow categories, the reference migration, and how to avoid reintroducing duplicate routers. Installation copies skills only: it does not disable other plugins, rewrite global instructions, or migrate an existing setup without your explicit action.
+Impeccable, bbilr-writing and session-handoff-prompt are optional, separately installed specialists referenced by name, not bundled dependencies. Preserve existing design and palette; do not stack multiple general design workflows. No automatic installation occurs when an optional skill is unavailable.
 
-Keep project-specific paths, credentials, prices, fee rates, model settings, and identity thresholds in private project configuration. The public skills intentionally contain no personal project data.
+The maintainer's lean configuration disables Universal Design Principles and removes Find Skills, repo-intake and source-research from discovery. This is a documented migration choice, not a command this package executes. See [migration and recovery](COMPATIBILITY.md).
 
-## Update Or Remove
+## Updates, Privacy And Limits
 
-Use `git pull --ff-only` in the checkout, review the diff, and back up existing installed folders before copying a selected update. Do not blindly replace customized skills. To uninstall, remove only the corresponding installed skill folders and any preferences you added; confirm their exact paths first. Removing a checkout alone does not uninstall copied skills.
+Back up customized installed folders outside skill discovery before updates. Review changes and copy only the intended files; do not overwrite later edits. Merge the small [AGENTS example](AGENTS.example.md) into existing instructions only if useful.
 
-For an existing checkout of the old repository, update its remote with `git remote set-url origin https://github.com/bbilr/bbilr-first-skills.git`, then pull. Existing installed companion folders do not need a name change. Install the new `bbilr-first-skills` folder and merge the new defaults to adopt the coordinating workflow; review changes before replacing any customized companion.
+Do not publish private paths, credentials, observations, memory or host configuration. The public Task Observer uses an adopter-selected storage directory instead of the maintainer's private path.
 
-This lean version retires `evidence-first-work`, `pordee`, and `thai-clear-brief` as separate skills. Evidence checks now live in [verification.md](skills/bbilr-first-skills/references/verification.md); language preferences live in the main skill/defaults. After reviewing custom changes, archive only those retired installed folders outside skill discovery and update old routing. A pull or fresh install does not remove previously installed copies or alter another plugin. Preserve task/profile data and project records when retiring their tools.
+Package validation checks structure, metadata and local links. It does not demonstrate improved model accuracy, lower token use, successful GPU execution, audio quality or reliable behavior in every future session. These skills are instructions, not a background service or an additional model.
 
-## Validation And Limitations
+## Licenses
 
-The current package is checked with Codex's bundled `quick_validate.py` for all six skills, YAML parsing, local Markdown link checks, and a public-file privacy scan. A disposable install-copy smoke test checks file layout and refusal to overwrite existing skills. These checks establish package structure, not improved behavior in every future task. Research extraction, OCR, GPU runs, TTS listening, video rendering, and business reconciliations are not runtime acceptance evidence for this package. Host discovery and actual invocation are separate checks.
+Original package content is [MIT](LICENSE). The adapted Task Observer is separately licensed [CC BY 4.0](skills/task-observer/LICENSE.txt), credited to Eoghan Henn and contributors, from [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all), upstream 3.6.0 at `56e890712273ce231b478adc56ee2eb81101c3d6`. The adaptation removes automatic observation/startup/review scripts and adds explicit-only Codex metadata and proposal-only boundaries. The root MIT license does not relicense that component.
 
-## Research And Media Guidance
-
-Use `$source-research` for multi-source comparisons, competitor or customer-pain research, and source audits. A single fact lookup does not need an extra research workflow. Crawl4AI and Docling are optional tool references, not bundled dependencies or automatic installations. Repository popularity and generated business ideas are leads, not proof of paid demand or profit.
-
-For video requests, [video-work.md](skills/bbilr-first-skills/references/video-work.md) supplements an available specialist such as Hyperframes. It reuses the approved project brief and checks rendered Thai text, framing, timing, and audio rather than adding another mandatory interview. Keep voices and quality thresholds in project-owned sources.
-
-## License And Scope
-
-[MIT License](LICENSE). You may use, modify, and redistribute this package under its license. This release contains the six skills listed above, work-pattern/video/verification guidance, and optional defaults. It does not redistribute Ponytail, Superpowers, Compass Skills, Obsidian integrations, other installed plugins, private memories, or host configuration. Shared principles are expressed in this package's own instructions; third-party packages retain their own ownership and licenses.
+Formerly bbilr/evidence-first-skills; this remains the same renamed repository.

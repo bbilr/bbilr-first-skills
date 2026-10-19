@@ -1,0 +1,6 @@
+interface:
+  display_name: "Task Observer"
+  short_description: "Evidence-backed skill proposals; approval before edits"
+  default_prompt: "Use $task-observer to propose skill improvements without changing installed skills."
+policy:
+  allow_implicit_invocation: false

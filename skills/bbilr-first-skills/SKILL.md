@@ -1,48 +1,30 @@
 ---
 name: bbilr-first-skills
-description: Coordinate bbilr's evidence-first, minimal-work approach for Windows coding and game development, repository setup, source research, local AI image/audio/video workflows, business reconciliation, Obsidian notes, and concise Thai communication. Use when the user invokes this workflow or has selected it as their default; choose only guidance relevant to the current task.
+description: Select relevant specialist guidance for bbilr's Windows projects and preserve source/adoption checks specific to this workflow. Use as the user's selected default without adding another planning layer.
 ---
 
 # bbilr First Skills
 
-Use this as the main workflow, not another planning layer. Explicit user instructions and higher-priority host instructions take precedence. Ordinary questions and small edits do not need a formal plan or a full skill stack.
+AGENTS.md owns general execution, approval, testing and delivery rules. This skill adds only source/adoption checks and specialist selection; do not repeat a planning pipeline or load every specialist.
 
-## Decide And Act
+## Sources And Adoption
 
-- Reuse the latest goal, settled decisions, and authorization in the conversation. Inspect discoverable facts before asking. Ask only when unresolved user-owned choices materially change the result or an action exceeds authorization. A delegated routine choice does not need another confirmation.
-- For advice, answer without editing. For action requests, implement the requested outcome and run the relevant checks. Do not substitute a smaller feature for an explicitly requested one.
-- Use evidence matched to the claim and version. Distinguish verified facts, inferences, and unknowns when it affects a decision. Retrieve current primary sources for changing external facts; do not fabricate citations, measurements, outputs, or readiness.
-- Choose the smallest adequate solution using existing code, libraries, and conventions. Read the actual call path before a bug fix. Keep edits scoped and preserve unrelated user work.
-- Use the project's testing tools. Reproduce a bug when feasible; scale tests to behavior and risk. Neither a fixed test count nor a blanket ban on frameworks/fixtures applies. Use strict TDD when requested or required, not automatically for every edit.
-- Define a concrete completion check for substantial work. Once it passes, stop. Reuse still-valid evidence instead of rerunning checks for ceremony.
-- If tools fail, try a permitted alternative only when the change can help. Continue unaffected work and state the blocked part; do not mistake a tool failure for evidence about the target.
+- Explain a remote repository from primary documentation first; do not clone or install merely to explain it. Compare adoption with capabilities already available and define a small representative trial when needed.
+- Separate code licenses from models, datasets and assets. Stars, install counts and generated business ideas do not establish quality, permission, demand or profit.
+- Preserve source URL/path and relevant date, version, units and locator for material claims. Distinguish direct evidence, inference and missing access; copied reports are not independent corroboration.
+- Research to the requested coverage, not an exhaustive crawl. Save an evidence table or raw extracts only when useful to the deliverable. Documentation, local execution and accepted output are distinct evidence levels.
 
-## Select Relevant Guidance
+## Specialist Selection
 
-The companion skills are installed as siblings. Read only what the current request needs; do not load every row. If a companion is unavailable, use the core rules above and report a capability gap only when it matters.
+Use only the guidance that adds something to the current task:
+- Installation or global setup: [install-checker](../install-checker/SKILL.md).
+- Local AI artifacts, GPU execution or Thai audio: [local-ai-verification](../local-ai-verification/SKILL.md).
+- Marketplace sales, settlements and bank reconciliation: [business-reconciliation](../business-reconciliation/SKILL.md).
+- Frontend design/review: optional separately installed `impeccable`. Preserve approved design and palette; do not stack overlapping design workflows by default.
+- Audience-facing writing: optional separately installed `bbilr-writing`, not ordinary technical replies.
+- Explicit session handoff: optional separately installed `session-handoff-prompt`. If an optional specialist is absent, use available tools without installing it automatically.
+- Skill/workflow review ONLY when the user explicitly requests it or invokes the skill: [task-observer](../task-observer/SKILL.md). Proposal-only until changes are approved; no observation logging during unrelated work.
 
-| Request | Companion | Boundary |
-| --- | --- | --- |
-| Claims, risky changes, evidence review | [verification.md](references/verification.md) | Evidence depth inside this workflow, not another router |
-| Unfamiliar repository | [repo-intake](../repo-intake/SKILL.md) | Answer the question before expanding exploration |
-| Multi-source research and evidence collection | [source-research](../source-research/SKILL.md) | Trace sources and coverage; a single fact lookup needs no extra workflow |
-| Install, upgrade, global setup | [install-checker](../install-checker/SKILL.md) | Files, discovery, and runtime are separate |
-| Local AI model/workflow/output | [local-ai-verification](../local-ai-verification/SKILL.md) | Use project settings and inspect actual artifacts |
-| Business sources and contribution | [business-reconciliation](../business-reconciliation/SKILL.md) | Do not mix sales, settlement, cash, or control totals |
+For relevant details only: [verification](references/verification.md), [games and Obsidian](references/work-patterns.md), [video](references/video-work.md). These references supplement the user's current instructions.
 
-Use [work-patterns.md](references/work-patterns.md) for games, Obsidian, handoffs, or a task crossing these domains. Third-party tools or specialist skills may supplement the chosen workflow when available; they do not introduce a second mandatory planning, approval, or review pipeline.
-
-For requested video work, use [video-work.md](references/video-work.md) with an available video specialist such as Hyperframes when appropriate. Reuse the project's approved brief and style; do not add another mandatory design interview.
-
-## Conflict Resolution
-
-- A 1% relevance rule is not a reason to load a skill. Select for actual task fit.
-- Do not invoke a design interview for a bounded, understood change. Ask about genuine design choices, not approval already given.
-- Brevity never removes uncertainty, sources needed for the conclusion, or requested explanation. Do not force English prose onto Thai requests or translate exact technical identifiers.
-- No skill text authorizes commits, publication, deletion, spending, or new external actions outside the user's scope. Existing authorization remains valid; environment permission controls still apply.
-- A user-requested deep interview or formal workflow is allowed. Otherwise use this workflow as the owner and specialist skills only for their relevant expertise.
-- Handle ordinary planning, clarification, pressure tests, and Thai rewriting directly. Do not reinstall retired process or style skills to perform these tasks. For the user's audience-facing voice, use `bbilr-writing` when available and relevant, not for ordinary technical replies.
-
-## Delivery
-
-Use concise natural Thai when the user writes Thai, with technical English preserved. Lead with the outcome, then relevant files or sources, actual checks, and material limits. Keep requested artifacts in their requested language. Distinguish `static-valid`, file presence, host discovery, runtime/GPU tests, and output review. Do not claim all-session activation from installation alone.
+Handle ordinary reasoning, planning, research, skill discovery and Thai explanations directly. Do not reinstall retired generic process skills. Inspect current tools before proposing another dependency. Specialist guidance never enlarges authorization or replaces project requirements.
